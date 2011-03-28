@@ -5,12 +5,19 @@
   android:layout_height="wrap_content"
   android:layout_width="wrap_content">
   <Button
-    android:text="Button"
+    android:text="Run Background"
     android:id="@+id/start"
-    android:layout_margin="30dip"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:layout_weight="1">
+    android:layout_height="wrap_content"
+    android:layout_margin="40dip"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center">
   </Button>
+  <TextView
+    android:id="@+id/resultbox"
+    android:text="Result will be displayed here"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_margin="25dip"
+    android:layout_gravity="center" />
 </LinearLayout>

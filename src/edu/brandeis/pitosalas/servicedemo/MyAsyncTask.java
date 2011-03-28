@@ -1,8 +1,9 @@
 package edu.brandeis.pitosalas.servicedemo;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 
-public class MyAsyncTask extends AsyncTask<Integer, Integer, Integer> {
+public class MyAsyncTask extends AsyncTask<Integer, Activity, Integer> {
 	Integer total;
 
 	// This method is executed before starting the new Thread. There is no
@@ -28,10 +29,10 @@ public class MyAsyncTask extends AsyncTask<Integer, Integer, Integer> {
 
 	// This method is called using the method publishProgress(String) from doInBackground, and it is
 	// usually used when you want to show any progress or information in the main screen, like a progress bar showing the
-	// progress of the operation you are doing in the background. 
+	// progress of the operation you are doing in the background.
+	
 	@Override
-	protected void onProgressUpdate(Integer... status) {
-		System.out.print(status[0]);
+	protected void onProgressUpdate(Activity...recipient) {
 	}
 
 	// This method is called after the operation in the background is done. As
